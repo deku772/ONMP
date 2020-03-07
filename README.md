@@ -1,7 +1,7 @@
 ﻿写在前面，目前ent源已降级到7.2以下，为了稳定性
-建议直接下载用winscp上传到tmp目录手动执行,避免网络问题
-./lede-ent.sh
-./onmp.sh
+ 建议直接下载用winscp上传到tmp目录手动执行,避免网络问题
+$ ./lede-ent.sh
+$ ./onmp.sh
 
 
 ONMP
@@ -40,7 +40,7 @@ ONMP内置了以下程序的一键安装：
 
 所有的软件包均通过 opkg 安装，一切配置均在脚本中可见，请放心使用
 
-## 使用说明
+## 原使用说明
 
 [wiki](https://github.com/xzhih/ONMP/wiki)
 
