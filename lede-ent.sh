@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 # sh -c "$(curl -ksSL http://192.168.4.126:4000/lede-ent.sh)"
 export PATH=/opt/bin:/opt/sbin:/sbin:/bin:/usr/sbin:/usr/bin$PATH
 
@@ -22,19 +22,19 @@ cd /tmp || exit
 
 case $(uname -m) in
     *armv5*)
-INST_URL="http://bin.entware.net/armv5sf-k3.2/installer/generic.sh"
+INST_URL="http://pkg.entware.net/binaries/armv5/installer/entware_install.sh"
 ;;
 *armv7l*)
-INST_URL="http://bin.entware.net/armv7sf-k3.2/installer/generic.sh"
+INST_URL="http://pkg.entware.net/binaries/armv7/installer/entware_install.sh"
 ;;
 *aarch64*)
 INST_URL="http://bin.entware.net/aarch64-k3.10/installer/generic.sh"
 ;;
 *mips*)
-INST_URL="http://bin.entware.net/mipselsf-k3.4/installer/generic.sh"
+INST_URL="http://pkg.entware.net/binaries/mipsel/installer/installer.sh"
 ;;
 x86_64)
-INST_URL="http://bin.entware.net/x64-k3.2/installer/generic.sh"
+INST_URL="http://pkg.entware.net/binaries/x86-64/installer/entware_install.sh"
 ;;
 *)
 echo "不好意思，你的平台似乎无法安装 Entware"
